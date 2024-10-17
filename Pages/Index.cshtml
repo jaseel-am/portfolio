@@ -1,0 +1,260 @@
+﻿@page
+@model IndexModel
+@{
+   // ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+        <!-- Navigation Bar -->
+        <nav>
+            <div class="container">
+                <h1 class="logo">Jaseel AM</h1>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- Home Section -->
+        <section id="home">
+            <div class="container">
+                <div class="home-content">
+                    <h2>Jaseel AM</h2>
+                    <h3>Senior Full Stack Software Developer (.NET)</h3>
+                    <p>Professional with 10+ years of experience in web and Windows application development, specializing in Financial, ERP, eCommerce, and Oil & Gas industries.</p>
+                    <p>Excellent expertise and experience in the financial, ERP, eCommerce, and oil & gas industries</p>
+                    <p> Have some good exposure in Web Apps, WinForms, SQL, DB schemas & DWH concepts.                </p>
+                    <p>RDBMS experience includes Oracle 11 to 19 & SQL-Server 2005/2008, SQL, PL/SQL, MySQL &MongoDB.</p>
+                    <p>
+                        Proficiency in asynchronous, multithreading programming.
+                    </p>
+                    <p>Expertise in project management techniques, especially AGILE, SCRUM, and waterfall</p>
+                    <p>
+                        Expert in end-to-end project planning and implementation, including scope management, activity sequencing,
+                        and task distribution.
+                    </p>
+                    <a href="#projects" class="btn-primary">View My Projects</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects">
+            <div class="container">
+                <h2>My Projects</h2>
+
+                <div class="project-item">
+                    <h3>Well Cost Management (WCM)</h3>
+                    <p><strong>Role:</strong> Senior Software Engineer / Team Lead</p>
+                    <p><strong>Technologies:</strong> ASP.Net, C#, Angular, Web API, Oracle 19c</p>
+                    <p>
+                        Developed an automated solution, WCM, to streamline well cost management in well engineering. WCM
+                        integrates with multiple systems to automate expense tracking, reducing manual effort, minimizing errors by
+                        30%, and improving application performance by 50%.
+                    </p>
+                </div>
+
+                <div class="project-item">
+                    <h3>Drilling Program Tool (DPT)</h3>
+                    <p><strong>Role:</strong> Senior Software Engineer/ Team Lead</p>
+                    <p><strong>Technologies:</strong> VB.NET, Angular, Oracle 19c</p>
+                    <p>
+                        Developed the Drilling Program Tool (DPT) to streamline the online workflow for generating Drilling Programs,
+                        incorporating well delivery milestones and deliverables in line with DCAF requirements. DPT extends the Well
+                        Planning Tool (WPT) workflow used for creating Well Proposals and is a semi-automated system built from
+                        WPT and SAP, requiring minimal user intervention.
+                    </p>
+                </div>
+
+                <div class="project-item">
+                    <h3>Integrated Development Program (IDP)</h3>
+                    <p><strong>Role:</strong> Senior Software Engineer</p>
+                    <p><strong>Technologies:</strong> Angular 14, DotNet Core API, Oracle 19c</p>
+                    <p>
+                        Developed the Integrated Development Tool (IDP) for managing the training matrix process, tracking
+                        employee training details. The tool includes role-based access for Coaches, Team Leads, and Trainees, each
+                        with a dedicated dashboard featuring graphical data representation. It also has an automated email system
+                        triggered by various activities.
+                    </p>
+                </div>
+
+                <!-- Add more projects here as needed -->
+
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills">
+            <div class="container">
+                <h2>Skills</h2>
+                <ul>
+                    <li><strong>Programming Languages:</strong> C#, VB.Net</li>
+                    <li><strong>Web Technologies:</strong> ASP.Net, Angular, Web API</li>
+                    <li><strong>Databases:</strong> Oracle, MSSQL, MySQL, MongoDB</li>
+                    <li><strong>Client Side Scripting:</strong> JavaScript, Typescript, HTML5, CSS5</li>
+                    <li><strong>Cloud:</strong> AWS</li>
+                    <li><strong>CMS:</strong> Kentico, Umbraco</li>
+                    <li><strong>Project Management:</strong> Agile, SCRUM, Waterfall</li>
+                    <!-- Add more skills as needed -->
+                </ul>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Me</h2>
+                <p><strong>Email:</strong> <a href="mailto:Jaseel.co@gmail.com">Jaseel.co@gmail.com</a></p>
+                <p><strong>Phone:</strong> +968 96044487, +91 9633685390</p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/jaseel-am-72442b2a/" target="_blank">linkedin.com/in/jaseel-am</a></p>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <div class="container">
+                <p>&copy; 2024 Jaseel AM. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <style type="text/css">
+                    * {
+                        margin: 0;
+                        padding: 0;
+                        box-sizing: border-box;
+                    }
+
+                    html {
+                        scroll-behavior: smooth; /* Enable smooth scrolling */
+                    }
+
+                    body {
+                        font-family: 'Roboto', sans-serif;
+                        line-height: 1.6;
+                        background-color: #f4f4f4;
+                        color: #333;
+                    }
+
+                    .container {
+                        width: 98%;
+                        margin: 0 auto;
+                    }
+
+                    nav {
+                        background-color: #333;
+                        padding: 30px 0;
+                        position: sticky; /* Make the header sticky */
+                        top: 0;
+                        z-index: 1000; /* Ensure the header stays on top */
+                    }
+
+                        nav .logo {
+                            float: left;
+                            color: white;
+                            font-size: 24px;
+                        }
+
+                        nav ul {
+                            list-style: none;
+                            float: right;
+                        }
+
+                            nav ul li {
+                                display: inline;
+                                margin-right: 15px;
+                            }
+
+                                nav ul li a {
+                                    color: white;
+                                    text-decoration: none;
+                                    font-size: 18px;
+                                }
+
+                    #home {
+                        background: #4CAF50;
+                        color: white;
+                        height: 100vh;
+            /*            display: flex;*/
+                        align-items: center;
+                        justify-content: center;
+                    }
+
+                    .home-content {
+                        text-align: center;
+                    }
+
+                        .home-content h2 {
+                            font-size: 50px;
+                        }
+
+                        .home-content h3 {
+                            font-size: 24px;
+                            margin: 10px 0;
+                        }
+
+                        .home-content p {
+                            font-size: 18px;
+                            margin: 20px 0;
+                        }
+
+                    .btn-primary {
+                        background-color: white;
+                        color: #4CAF50;
+                        padding: 10px 20px;
+                        text-decoration: none;
+                        font-size: 18px;
+                        border-radius: 5px;
+                    }
+
+                    #projects, #skills, #contact {
+                        padding: 50px 0;
+                    }
+
+                        #projects h2, #skills h2, #contact h2 {
+                            text-align: center;
+                            margin-bottom: 40px;
+                        }
+
+                    .project-item {
+                        background-color: white;
+                        padding: 20px;
+                        margin-bottom: 20px;
+                        border-radius: 5px;
+                        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+                    }
+
+                    #skills ul {
+                        list-style: none;
+                        text-align: center;
+                    }
+
+                        #skills ul li {
+                            padding: 10px;
+                            font-size: 18px;
+                        }
+
+                    #contact p {
+                        text-align: center;
+                        font-size: 18px;
+                    }
+
+                    #contact a {
+                        color: #4CAF50;
+                        text-decoration: none;
+                    }
+
+                    footer {
+                        background-color: #333;
+                        color: white;
+                        text-align: center;
+                        padding: 20px 0;
+                    }
+
+                        footer p {
+                            margin: 0;
+                        }
+        </style>
+</div>
